@@ -135,8 +135,8 @@ h1,h2,h3,h4,h5{font-family:var(--font-head);font-weight:600;line-height:1.2}
 .timeline-item{display:flex;flex-direction:column;width:100%;max-width:100%;padding:0;position:relative;align-items:stretch}
 .timeline-item:nth-child(even){flex-direction:column}
 .timeline-dot{display:none}
-.timeline-content{position:relative;padding:32px 32px 32px 60px;border-radius:16px;background:rgba(20,20,30,0.6);border:1px solid rgba(212,168,83,0.2);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:all .4s;border-top:3px solid var(--gold);box-shadow:0 8px 32px rgba(0,0,0,0.3)}
-.timeline-content::before{content:attr(data-number);position:absolute;top:16px;left:16px;font-size:.8rem;font-weight:700;color:var(--gold);letter-spacing:1px;opacity:.8}
+.timeline-content{position:relative;padding:32px;border-radius:16px;background:rgba(20,20,30,0.6);border:1px solid rgba(212,168,83,0.2);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:all .4s;border-top:3px solid var(--gold);box-shadow:0 8px 32px rgba(0,0,0,0.3);text-align:center}
+.timeline-content::before{content:attr(data-number);display:block;font-size:.8rem;font-weight:700;color:var(--gold);letter-spacing:1px;opacity:.8;margin-bottom:8px}
 .timeline-content:hover{border-color:rgba(212,168,83,0.4);background:rgba(20,20,30,0.75);box-shadow:0 12px 48px rgba(212,168,83,0.15)}
 .timeline-time{font-size:.85rem;color:var(--gold);font-weight:600;text-transform:uppercase;letter-spacing:2px;margin-bottom:8px;display:flex;align-items:center;gap:8px}
 .timeline-content h3{font-size:1.4rem;color:var(--cream);margin-bottom:8px;margin-top:8px}
@@ -299,7 +299,7 @@ h1,h2,h3,h4,h5{font-family:var(--font-head);font-weight:600;line-height:1.2}
   .timeline{gap:28px}
   .timeline-item:nth-child(even){flex-direction:column;padding-left:0}
   .timeline-dot{display:none}
-  .timeline-content{padding:24px 24px 24px 48px;border-radius:12px;width:100%;flex:1}
+  .timeline-content{padding:24px;border-radius:12px;width:100%;flex:1;text-align:center}
   .timeline-time{font-size:.8rem}
   .timeline-content h3{font-size:1.2rem;margin-bottom:6px}
   .timeline-content p{font-size:.9rem}
@@ -375,7 +375,7 @@ table{width:100%;overflow-x:auto}
 }
 @media(max-width:640px){
   .timeline{gap:28px}
-  .timeline-content{padding:22px 20px 22px 44px;border-radius:10px;font-size:.9rem}
+  .timeline-content{padding:22px 20px;border-radius:10px;font-size:.9rem;text-align:center}
   .timeline-content h3{font-size:1.1rem}
   .timeline-time{font-size:.75rem}
 }
