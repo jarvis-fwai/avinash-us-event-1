@@ -100,7 +100,7 @@ h1,h2,h3,h4,h5{font-family:var(--font-head);font-weight:600;line-height:1.2}
 .countdown-value{font-family:var(--font-head);font-size:clamp(2rem,5vw,3.5rem);color:var(--gold);font-weight:700;line-height:1;display:block;min-width:70px}
 .countdown-label{font-size:.75rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:2px;margin-top:8px}
 .countdown-sep{font-size:2.5rem;color:rgba(212,168,83,0.3);align-self:flex-start;margin-top:4px}
-.hero-scroll{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:2;color:var(--gold);font-size:.8rem;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0;animation:hero-text-in 1s 1.5s forwards;letter-spacing:2px;text-transform:uppercase}
+.hero-scroll{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:2;color:var(--gold);font-size:.8rem;text-decoration:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;animation:hero-text-in 1s 1.5s forwards;letter-spacing:2px;text-transform:uppercase;width:auto;white-space:nowrap}
 .hero-scroll i{animation:bounce-down 2s infinite}
 @keyframes bounce-down{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
 
@@ -516,6 +516,7 @@ table{width:100%;overflow-x:auto}
 <div class="countdown-item"><span class="countdown-value" id="cd-mins">00</span><span class="countdown-label">Minutes</span></div>
 <span class="countdown-sep">:</span>
 <div class="countdown-item"><span class="countdown-value" id="cd-secs">00</span><span class="countdown-label">Seconds</span></div>
+</div>
 </div>
 </div>
 <a href="#promise" class="hero-scroll">Discover More <i class="fas fa-chevron-down"></i></a>
