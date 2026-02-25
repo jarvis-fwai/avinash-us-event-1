@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awaken Dallas 2026 — A Life & Leadership Transformation Experience</title>
+<meta name="description" content="One Day That Can Change Your Life Forever. May 30, 2026 at Dallas Convention Center. 5 world-class speakers. Transform your mindset, health, wealth & purpose.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--gold:#D4A853;--gold-light:#F0D48A;--gold-dark:#B8860B;
+--amber:#E8A317;--cream:#FFF8E7;
+--dark:#0A0A0A;--dark-2:#111111;--dark-3:#1A1A1A;--dark-4:#222222;
+--glass:rgba(255,255,255,0.05);--glass-border:rgba(212,168,83,0.15);
+--text:#E8E8E8;--text-dim:#999;
+--font-body:'Inter',sans-serif;--font-head:'Playfair Display',serif;
+}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:var(--font-body);background:var(--dark);color:var(--text);line-height:1.7;overflow-x:hidden}
+::selection{background:var(--gold);color:var(--dark)}
+h1,h2,h3,h4,h5{font-family:var(--font-head);font-weight:600;line-height:1.2}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--dark)}
+::-webkit-scrollbar-thumb{background:var(--gold-dark);border-radius:3px}
+
+/* UTILITY */
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.section{padding:120px 0;position:relative}
+.section-label{text-transform:uppercase;letter-spacing:4px;font-size:13px;color:var(--gold);font-weight:600;margin-bottom:16px;display:block}
+.section-title{font-size:clamp(2rem,5vw,3.5rem);margin-bottom:24px;background:linear-gradient(135deg,var(--gold-light),var(--gold),var(--gold-dark));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.section-sub{font-size:1.15rem;color:var(--text-dim);max-width:680px;margin:0 auto 60px;line-height:1.8}
+.text-center{text-align:center}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:18px 40px;border-radius:60px;font-size:1rem;font-weight:600;text-decoration:none;transition:all .4s cubic-bezier(.23,1,.32,1);cursor:pointer;border:none;position:relative;overflow:hidden}
+.btn-primary{background:linear-gradient(135deg,var(--gold),var(--amber));color:var(--dark);box-shadow:0 4px 30px rgba(212,168,83,0.3)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 40px rgba(212,168,83,0.5)}
+.btn-outline{background:transparent;color:var(--gold);border:1.5px solid var(--gold)}
+.btn-outline:hover{background:var(--gold);color:var(--dark);transform:translateY(-3px)}
+
+/* REVEAL ANIMATIONS */
+.reveal{opacity:0;transform:translateY(40px);transition:all .8s cubic-bezier(.23,1,.32,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}
+.reveal-delay-2{transition-delay:.2s}
+.reveal-delay-3{transition-delay:.3s}
+.reveal-delay-4{transition-delay:.4s}
+.reveal-delay-5{transition-delay:.5s}
+.reveal-delay-6{transition-delay:.6s}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:20px 0;transition:all .4s}
+.nav.scrolled{background:rgba(10,10,10,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:12px 0;border-bottom:1px solid var(--glass-border)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--font-head);font-size:1.5rem;color:var(--gold);text-decoration:none;font-weight:700;letter-spacing:1px}
+.nav-logo span{color:var(--text)}
+.nav-links{display:flex;gap:32px;align-items:center;list-style:none}
+.nav-links a{color:var(--text-dim);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .3s;letter-spacing:.5px}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{padding:10px 28px!important;font-size:.85rem!important}
+.nav-toggle{display:none;background:none;border:none;color:var(--gold);font-size:1.5rem;cursor:pointer}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(212,168,83,0.08) 0%,transparent 60%),radial-gradient(ellipse at 80% 80%,rgba(184,134,11,0.05) 0%,transparent 40%),var(--dark)}
+#particles-canvas{position:absolute;inset:0;z-index:1}
+.hero-content{position:relative;z-index:2;text-align:center;max-width:900px;padding:0 24px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:10px 24px;border:1px solid var(--glass-border);border-radius:60px;background:var(--glass);backdrop-filter:blur(10px);font-size:.85rem;color:var(--gold);margin-bottom:32px;letter-spacing:2px;text-transform:uppercase;font-weight:500}
+.hero-badge .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);animation:pulse-dot 2s infinite}
+@keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.5)}}
+.hero h1{font-size:clamp(2.8rem,7vw,5.5rem);margin-bottom:24px;line-height:1.05;opacity:0;animation:hero-text-in 1s .3s forwards}
+.hero h1 .line1{display:block;color:var(--text);font-weight:400;font-style:italic;font-size:.45em;margin-bottom:8px}
+.hero h1 .line2{display:block;background:linear-gradient(135deg,var(--gold-light),var(--gold),var(--amber));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero h1 .line3{display:block;color:var(--text);font-weight:400;font-size:.35em;margin-top:12px;font-family:var(--font-body);letter-spacing:6px;text-transform:uppercase}
+@keyframes hero-text-in{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.hero-sub{font-size:1.2rem;color:var(--text-dim);max-width:600px;margin:0 auto 40px;opacity:0;animation:hero-text-in 1s .6s forwards;line-height:1.8}
+.hero-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;opacity:0;animation:hero-text-in 1s .9s forwards}
+.countdown{display:flex;gap:16px;justify-content:center;margin-top:48px;opacity:0;animation:hero-text-in 1s 1.2s forwards}
+.countdown-item{text-align:center}
+.countdown-value{font-family:var(--font-head);font-size:clamp(2rem,5vw,3.5rem);color:var(--gold);font-weight:700;line-height:1;display:block;min-width:70px}
+.countdown-label{font-size:.75rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:2px;margin-top:8px}
+.countdown-sep{font-size:2.5rem;color:rgba(212,168,83,0.3);align-self:flex-start;margin-top:4px}
+.hero-scroll{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:2;color:var(--gold);font-size:.8rem;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0;animation:hero-text-in 1s 1.5s forwards;letter-spacing:2px;text-transform:uppercase}
+.hero-scroll i{animation:bounce-down 2s infinite}
+@keyframes bounce-down{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+
+/* PROMISE SECTION */
+.promise{background:linear-gradient(180deg,var(--dark) 0%,var(--dark-2) 100%);overflow:hidden}
+.promise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:60px}
+.promise-card{padding:40px 32px;border-radius:20px;background:var(--glass);border:1px solid var(--glass-border);backdrop-filter:blur(10px);transition:all .4s;position:relative;overflow:hidden}
+.promise-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity .4s}
+.promise-card:hover{transform:translateY(-8px);border-color:rgba(212,168,83,0.3)}
+.promise-card:hover::before{opacity:1}
+.promise-icon{font-size:2rem;color:var(--gold);margin-bottom:20px}
+.promise-card h3{font-size:1.3rem;margin-bottom:12px;color:var(--cream)}
+.promise-card p{color:var(--text-dim);font-size:.95rem}
+
+/* SPEAKERS */
+.speakers{background:var(--dark-2)}
+.speakers-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px}
+.speaker-card{border-radius:20px;background:var(--glass);border:1px solid var(--glass-border);overflow:hidden;transition:all .5s cubic-bezier(.23,1,.32,1);position:relative;group:true}
+.speaker-card:hover{transform:translateY(-12px);border-color:rgba(212,168,83,0.4);box-shadow:0 20px 60px rgba(0,0,0,0.4),0 0 40px rgba(212,168,83,0.1)}
+.speaker-img{width:100%;aspect-ratio:1;object-fit:cover;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-size:3rem;color:var(--gold);position:relative;overflow:hidden}
+.speaker-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.speaker-card:hover .speaker-img img{transform:scale(1.08)}
+.speaker-img .initials{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3.5rem;font-weight:700;color:var(--gold)}
+.speaker-info{padding:24px}
+.speaker-name{font-size:1.2rem;color:var(--cream);margin-bottom:4px}
+.speaker-role{font-size:.85rem;color:var(--gold);font-weight:500;margin-bottom:12px}
+.speaker-quote{font-size:.9rem;color:var(--text-dim);font-style:italic;line-height:1.6}
+
+/* SCHEDULE */
+.schedule{background:linear-gradient(180deg,var(--dark-2),var(--dark))}
+.timeline{position:relative;max-width:800px;margin:0 auto}
+.timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,transparent,var(--gold),transparent);transform:translateX(-50%)}
+.timeline-item{display:flex;gap:40px;margin-bottom:60px;position:relative;align-items:center}
+.timeline-item:nth-child(even){flex-direction:row-reverse}
+.timeline-dot{width:20px;height:20px;border-radius:50%;background:var(--gold);border:4px solid var(--dark);position:absolute;left:50%;transform:translateX(-50%);z-index:2;box-shadow:0 0 20px rgba(212,168,83,0.4)}
+.timeline-content{flex:1;padding:32px;border-radius:20px;background:var(--glass);border:1px solid var(--glass-border);backdrop-filter:blur(10px);transition:all .4s}
+.timeline-content:hover{border-color:rgba(212,168,83,0.3)}
+.timeline-time{font-size:.85rem;color:var(--gold);font-weight:600;text-transform:uppercase;letter-spacing:2px;margin-bottom:8px}
+.timeline-content h3{font-size:1.4rem;color:var(--cream);margin-bottom:8px}
+.timeline-content p{color:var(--text-dim);font-size:.95rem}
+.timeline-spacer{flex:1}
+
+/* AUDIENCE */
+.audience{background:var(--dark)}
+.audience-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
+.audience-card{padding:36px 24px;border-radius:16px;background:var(--glass);border:1px solid var(--glass-border);text-align:center;transition:all .4s}
+.audience-card:hover{transform:translateY(-6px);border-color:rgba(212,168,83,0.3)}
+.audience-card i{font-size:2.5rem;color:var(--gold);margin-bottom:16px}
+.audience-card h4{font-size:1.1rem;color:var(--cream);margin-bottom:8px}
+.audience-card p{color:var(--text-dim);font-size:.85rem}
+
+/* PRICING */
+.pricing{background:linear-gradient(180deg,var(--dark),var(--dark-2));overflow:hidden}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:center}
+.price-card{padding:48px 36px;border-radius:24px;background:var(--glass);border:1px solid var(--glass-border);text-align:center;transition:all .5s cubic-bezier(.23,1,.32,1);position:relative}
+.price-card:hover{transform:translateY(-8px)}
+.price-card.featured{border-color:var(--gold);background:linear-gradient(180deg,rgba(212,168,83,0.08),var(--glass));transform:scale(1.05);z-index:2}
+.price-card.featured:hover{transform:scale(1.05) translateY(-8px)}
+.price-card.featured::before{content:'';position:absolute;inset:-1px;border-radius:24px;padding:1px;background:linear-gradient(180deg,var(--gold),transparent 60%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.price-badge{display:inline-block;padding:6px 20px;border-radius:30px;background:linear-gradient(135deg,var(--gold),var(--amber));color:var(--dark);font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin-bottom:24px}
+.price-tier{font-size:1.1rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:3px;margin-bottom:16px;font-weight:500}
+.price-amount{font-family:var(--font-head);font-size:3.5rem;color:var(--cream);font-weight:700;margin-bottom:4px}
+.price-original{font-size:1.1rem;color:var(--text-dim);text-decoration:line-through;margin-bottom:24px}
+.price-features{list-style:none;text-align:left;margin-bottom:32px}
+.price-features li{padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--text-dim);font-size:.9rem;display:flex;align-items:center;gap:10px}
+.price-features li i{color:var(--gold);font-size:.8rem}
+.price-card .btn{width:100%;justify-content:center}
+
+/* STATS */
+.stats{background:var(--dark-2);border-top:1px solid var(--glass-border);border-bottom:1px solid var(--glass-border)}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.stat-item{text-align:center}
+.stat-value{font-family:var(--font-head);font-size:clamp(2.5rem,5vw,4rem);color:var(--gold);font-weight:700;line-height:1}
+.stat-label{color:var(--text-dim);font-size:.9rem;margin-top:8px;text-transform:uppercase;letter-spacing:2px}
+
+/* TESTIMONIALS */
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:24px;margin-top:60px}
+.testimonial-card{padding:32px;border-radius:20px;background:var(--glass);border:1px solid var(--glass-border);position:relative}
+.testimonial-card::before{content:'\201C';font-family:var(--font-head);font-size:5rem;color:var(--gold);opacity:.2;position:absolute;top:10px;left:24px;line-height:1}
+.testimonial-text{font-size:1rem;color:var(--text);line-height:1.8;margin-bottom:20px;position:relative;z-index:1;font-style:italic}
+.testimonial-author{display:flex;align-items:center;gap:12px}
+.testimonial-avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--amber));display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--dark);font-size:.9rem}
+.testimonial-name{font-weight:600;color:var(--cream);font-size:.95rem}
+.testimonial-role{color:var(--text-dim);font-size:.8rem}
+
+/* VENUE */
+.venue{background:var(--dark)}
+.venue-card{border-radius:24px;overflow:hidden;background:var(--glass);border:1px solid var(--glass-border);display:grid;grid-template-columns:1fr 1fr;gap:0}
+.venue-map{min-height:400px;background:linear-gradient(135deg,var(--dark-3),var(--dark-4));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.venue-map iframe{width:100%;height:100%;border:0;filter:grayscale(.8) brightness(.7) contrast(1.2)}
+.venue-info{padding:48px;display:flex;flex-direction:column;justify-content:center}
+.venue-info h3{font-size:1.8rem;color:var(--cream);margin-bottom:16px}
+.venue-info p{color:var(--text-dim);margin-bottom:24px;line-height:1.8}
+.venue-details{list-style:none}
+.venue-details li{display:flex;align-items:center;gap:12px;padding:10px 0;color:var(--text-dim);font-size:.95rem}
+.venue-details li i{color:var(--gold);width:20px;text-align:center}
+
+/* FAQ */
+.faq{background:var(--dark-2)}
+.faq-grid{max-width:800px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--glass-border);overflow:hidden}
+.faq-q{padding:24px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:1.05rem;color:var(--cream);font-weight:500;transition:color .3s}
+.faq-q:hover{color:var(--gold)}
+.faq-q i{color:var(--gold);transition:transform .3s;font-size:.85rem}
+.faq-item.open .faq-q i{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .4s;color:var(--text-dim);line-height:1.8;font-size:.95rem}
+.faq-item.open .faq-a{max-height:300px;padding-bottom:24px}
+
+/* FINAL CTA */
+.final-cta{background:radial-gradient(ellipse at 50% 50%,rgba(212,168,83,0.1),transparent 70%),var(--dark);padding:140px 0;text-align:center}
+.final-cta h2{font-size:clamp(2.5rem,6vw,4.5rem);margin-bottom:24px;background:linear-gradient(135deg,var(--gold-light),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.final-cta p{font-size:1.2rem;color:var(--text-dim);max-width:600px;margin:0 auto 40px;line-height:1.8}
+.urgency-bar{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border-radius:60px;background:rgba(220,38,38,0.1);border:1px solid rgba(220,38,38,0.3);color:#F87171;font-size:.9rem;font-weight:600;margin-bottom:32px}
+.urgency-bar i{animation:pulse-dot 1.5s infinite}
+
+/* FOOTER */
+.footer{background:var(--dark);border-top:1px solid var(--glass-border);padding:60px 0 30px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.footer-brand p{color:var(--text-dim);font-size:.9rem;margin-top:12px;line-height:1.8}
+.footer-links h4{color:var(--gold);font-size:.85rem;text-transform:uppercase;letter-spacing:2px;margin-bottom:16px}
+.footer-links a{display:block;color:var(--text-dim);text-decoration:none;font-size:.9rem;padding:4px 0;transition:color .3s}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid var(--glass-border);padding-top:24px;display:flex;justify-content:space-between;align-items:center;color:var(--text-dim);font-size:.85rem}
+.footer-social{display:flex;gap:16px}
+.footer-social a{color:var(--text-dim);font-size:1.1rem;transition:color .3s}
+.footer-social a:hover{color:var(--gold)}
+
+/* MOBILE NAV */
+.mobile-menu{display:none;position:fixed;inset:0;background:rgba(10,10,10,0.97);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:32px}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:var(--text);font-size:1.3rem;text-decoration:none;font-family:var(--font-head)}
+.mobile-close{position:absolute;top:24px;right:24px;background:none;border:none;color:var(--gold);font-size:2rem;cursor:pointer}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+.pricing-grid{grid-template-columns:1fr;max-width:440px;margin:0 auto}
+.price-card.featured{transform:none}
+.price-card.featured:hover{transform:translateY(-8px)}
+.venue-card{grid-template-columns:1fr}
+.venue-map{min-height:300px}
+.footer-grid{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+.nav-links{display:none}
+.nav-toggle{display:block}
+.promise-grid{grid-template-columns:1fr}
+.timeline::before{left:20px}
+.timeline-item,.timeline-item:nth-child(even){flex-direction:column;padding-left:50px}
+.timeline-dot{left:20px;transform:none}
+.timeline-spacer{display:none}
+.stats-grid{grid-template-columns:1fr}
+.testimonials-grid{grid-template-columns:1fr}
+.hero h1{font-size:clamp(2.2rem,8vw,3.5rem)}
+.countdown{gap:10px}
+.section{padding:80px 0}
+}
+
+/* GLOW ANIMATION */
+@keyframes glow{0%,100%{box-shadow:0 0 20px rgba(212,168,83,0.2)}50%{box-shadow:0 0 40px rgba(212,168,83,0.4),0 0 80px rgba(212,168,83,0.1)}}
+.price-card.featured{animation:glow 3s infinite}
+
+/* FLOATING PARTICLES (CSS fallback) */
+.hero-orb{position:absolute;border-radius:50%;filter:blur(60px);opacity:.15;z-index:0}
+.hero-orb-1{width:400px;height:400px;background:var(--gold);top:-100px;right:-100px;animation:float-orb 8s ease-in-out infinite}
+.hero-orb-2{width:300px;height:300px;background:var(--amber);bottom:-50px;left:-100px;animation:float-orb 10s ease-in-out infinite reverse}
+@keyframes float-orb{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-30px)}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+<div class="container nav-inner">
+<a href="#" class="nav-logo">AWAKEN <span>DALLAS</span></a>
+<ul class="nav-links">
+<li><a href="#speakers">Speakers</a></li>
+<li><a href="#schedule">Schedule</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#venue">Venue</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#pricing" class="btn btn-primary nav-cta">Get Tickets</a></li>
+</ul>
+<button class="nav-toggle" onclick="document.getElementById('mobileMenu').classList.add('open')" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+</div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+<button class="mobile-close" onclick="this.parentElement.classList.remove('open')" aria-label="Close menu"><i class="fas fa-times"></i></button>
+<a href="#speakers" onclick="this.parentElement.classList.remove('open')">Speakers</a>
+<a href="#schedule" onclick="this.parentElement.classList.remove('open')">Schedule</a>
+<a href="#pricing" onclick="this.parentElement.classList.remove('open')">Pricing</a>
+<a href="#venue" onclick="this.parentElement.classList.remove('open')">Venue</a>
+<a href="#faq" onclick="this.parentElement.classList.remove('open')">FAQ</a>
+<a href="#pricing" class="btn btn-primary" onclick="this.parentElement.classList.remove('open')">Get Tickets</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-bg">
+<div class="hero-orb hero-orb-1"></div>
+<div class="hero-orb hero-orb-2"></div>
+</div>
+<canvas id="particles-canvas"></canvas>
+<div class="hero-content">
+<div class="hero-badge"><span class="dot"></span> May 30, 2026 · Dallas, Texas</div>
+<h1>
+<span class="line1">One Day That Can Change Your Life Forever</span>
+<span class="line2">AWAKEN DALLAS</span>
+<span class="line3">A Life & Leadership Transformation Experience</span>
+</h1>
+<p class="hero-sub">Join 500 visionaries, leaders, and changemakers for the most transformative event of 2026. Five world-class speakers. One unforgettable day.</p>
+<div class="hero-buttons">
+<a href="#pricing" class="btn btn-primary"><i class="fas fa-ticket-alt"></i> Reserve Your Seat</a>
+<a href="#speakers" class="btn btn-outline"><i class="fas fa-play"></i> Meet The Speakers</a>
+</div>
+<div class="countdown" id="countdown">
+<div class="countdown-item"><span class="countdown-value" id="cd-days">000</span><span class="countdown-label">Days</span></div>
+<span class="countdown-sep">:</span>
+<div class="countdown-item"><span class="countdown-value" id="cd-hours">00</span><span class="countdown-label">Hours</span></div>
+<span class="countdown-sep">:</span>
+<div class="countdown-item"><span class="countdown-value" id="cd-mins">00</span><span class="countdown-label">Minutes</span></div>
+<span class="countdown-sep">:</span>
+<div class="countdown-item"><span class="countdown-value" id="cd-secs">00</span><span class="countdown-label">Seconds</span></div>
+</div>
+</div>
+<a href="#promise" class="hero-scroll">Discover More <i class="fas fa-chevron-down"></i></a>
+</section>
+
+<!-- PROMISE -->
+<section class="section promise" id="promise">
+<div class="container text-center">
+<span class="section-label reveal">The Promise</span>
+<h2 class="section-title reveal">This Is Not Just An Event</h2>
+<p class="section-sub reveal">It's a catalyst for the life you were always meant to live. Walk in as you are. Walk out transformed — with clarity, purpose, and an unshakeable vision for your future.</p>
+<div class="promise-grid">
+<div class="promise-card reveal reveal-delay-1">
+<div class="promise-icon"><i class="fas fa-brain"></i></div>
+<h3>Rewire Your Mindset</h3>
+<p>Break free from the invisible patterns holding you back. Discover the mental frameworks used by the world's highest performers.</p>
+</div>
+<div class="promise-card reveal reveal-delay-2">
+<div class="promise-icon"><i class="fas fa-bolt"></i></div>
+<h3>Ignite Your Purpose</h3>
+<p>Connect with your deepest calling. Leave with a crystal-clear roadmap for the next chapter of your extraordinary life.</p>
+</div>
+<div class="promise-card reveal reveal-delay-3">
+<div class="promise-icon"><i class="fas fa-users"></i></div>
+<h3>Join Your Tribe</h3>
+<p>Surround yourself with 500 ambitious, like-minded souls. The connections you make here will change the trajectory of everything.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SPEAKERS -->
+<section class="section speakers" id="speakers">
+<div class="container text-center">
+<span class="section-label reveal">World-Class Lineup</span>
+<h2 class="section-title reveal">Meet Your Guides</h2>
+<p class="section-sub reveal">Five extraordinary leaders, each a master of their craft, coming together for one purpose — to unlock the greatness within you.</p>
+<div class="speakers-grid">
+<div class="speaker-card reveal reveal-delay-1">
+<div class="speaker-img" style="background:linear-gradient(135deg,#2d1b4e,#1a1a2e)">
+<img src="/awaken/images/sidz.jpg" alt="Siddharth Rajsekar">
+</div>
+<div class="speaker-info">
+<h3 class="speaker-name">Siddharth Rajsekar</h3>
+<p class="speaker-role">India's #1 AI Digital Coach</p>
+<p class="speaker-quote">"Building the future of digital entrepreneurship"</p>
+</div>
+</div>
+<div class="speaker-card reveal reveal-delay-2">
+<div class="speaker-img" style="background:linear-gradient(135deg,#2d3a1b,#1a1a2e)">
+<img src="/awaken/images/avinash.jpg" alt="Avinash Mada">
+</div>
+<div class="speaker-info">
+<h3 class="speaker-name">Avinash Mada</h3>
+<p class="speaker-role">AI Coach & Future Skills Strategist</p>
+<p class="speaker-quote">"Preparing leaders for the AI-powered future"</p>
+</div>
+</div>
+<div class="speaker-card reveal reveal-delay-3">
+<div class="speaker-img" style="background:linear-gradient(135deg,#1b1b3a,#2e1a1a)">
+<img src="/awaken/images/vamsi.jpg" alt="Dr. Vamsi Krishna">
+</div>
+<div class="speaker-info">
+<h3 class="speaker-name">Dr. Vamsi Krishna</h3>
+<p class="speaker-role">Tech Entrepreneur & Community Builder</p>
+<p class="speaker-quote">"Bridging technology and human connection"</p>
+</div>
+</div>
+<div class="speaker-card reveal reveal-delay-4">
+<div class="speaker-img" style="background:linear-gradient(135deg,#3a1b2d,#1a1a2e)">
+<img src="/awaken/images/drmonicka_yt.jpg" alt="Dr. Monicka Singh">
+</div>
+<div class="speaker-info">
+<h3 class="speaker-name">Dr. Monicka Singh</h3>
+<p class="speaker-role">Mindset & Conscious Parenting Expert</p>
+<p class="speaker-quote">"Transforming parenthood and personal growth"</p>
+</div>
+</div>
+<div class="speaker-card reveal reveal-delay-1">
+<div class="speaker-img" style="background:linear-gradient(135deg,#1b2d3a,#1a1a2e)">
+<img src="/awaken/images/manipavitra.png" alt="Dr. Mani Pavitra">
+</div>
+<div class="speaker-info">
+<h3 class="speaker-name">Dr. Mani Pavitra</h3>
+<p class="speaker-role">Entrepreneur & Life Coach</p>
+<p class="speaker-quote">"Guiding souls toward inner awakening"</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="section schedule" id="schedule">
+<div class="container text-center">
+<span class="section-label reveal">Your Journey</span>
+<h2 class="section-title reveal">One Day. Four Transformations.</h2>
+<p class="section-sub reveal">Every session is carefully curated to build upon the last — taking you on a journey from inner awakening to outer mastery.</p>
+<div class="timeline">
+<div class="timeline-item reveal">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<span class="timeline-time"><i class="fas fa-sunrise"></i> Morning Session</span>
+<h3>Mindset & Identity</h3>
+<p>Start the day by shattering limiting beliefs. Discover who you truly are beneath the noise and step into your most powerful identity.</p>
+</div>
+<div class="timeline-spacer"></div>
+</div>
+<div class="timeline-item reveal">
+<div class="timeline-dot"></div>
+<div class="timeline-spacer"></div>
+<div class="timeline-content">
+<span class="timeline-time"><i class="fas fa-sun"></i> Midday Session</span>
+<h3>Health & Consciousness</h3>
+<p>Your body is the vehicle for your vision. Learn revolutionary approaches to health, energy, and holistic well-being that fuel extraordinary performance.</p>
+</div>
+</div>
+<div class="timeline-item reveal">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<span class="timeline-time"><i class="fas fa-bolt"></i> Afternoon Session</span>
+<h3>Wealth & AI</h3>
+<p>The future belongs to those who prepare for it today. Master the intersection of wealth creation, technology, and artificial intelligence.</p>
+</div>
+<div class="timeline-spacer"></div>
+</div>
+<div class="timeline-item reveal">
+<div class="timeline-dot"></div>
+<div class="timeline-spacer"></div>
+<div class="timeline-content">
+<span class="timeline-time"><i class="fas fa-star"></i> Evening Session</span>
+<h3>Purpose & Community</h3>
+<p>End the day with a fire in your soul. Connect with your purpose, build lasting bonds, and leave with an unbreakable commitment to your vision.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- AUDIENCE -->
+<section class="section audience" id="audience">
+<div class="container text-center">
+<span class="section-label reveal">Who This Is For</span>
+<h2 class="section-title reveal">Is This You?</h2>
+<p class="section-sub reveal">If you feel a stirring inside — a whisper that says <em>"there's more"</em> — then you've already found your answer.</p>
+<div class="audience-grid">
+<div class="audience-card reveal reveal-delay-1">
+<i class="fas fa-rocket"></i>
+<h4>Entrepreneurs & Professionals</h4>
+<p>Ready to 10x your impact and income through conscious leadership</p>
+</div>
+<div class="audience-card reveal reveal-delay-2">
+<i class="fas fa-chalkboard-teacher"></i>
+<h4>Coaches & Trainers</h4>
+<p>Looking to elevate your practice and transform more lives</p>
+</div>
+<div class="audience-card reveal reveal-delay-3">
+<i class="fas fa-heart"></i>
+<h4>Parents & Families</h4>
+<p>Seeking deeper connection and conscious approaches to family life</p>
+</div>
+<div class="audience-card reveal reveal-delay-4">
+<i class="fas fa-graduation-cap"></i>
+<h4>Students & Young Leaders</h4>
+<p>Building the foundation for an extraordinary future</p>
+</div>
+<div class="audience-card reveal reveal-delay-5">
+<i class="fas fa-mountain"></i>
+<h4>Anyone Ready to Rise</h4>
+<p>If something inside you says "yes" — that's your sign</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PRICING -->
+<section class="section pricing" id="pricing">
+<div class="container text-center">
+<span class="section-label reveal">Invest In Yourself</span>
+<h2 class="section-title reveal">Choose Your Experience</h2>
+<p class="section-sub reveal">Every tier is designed to give you immense value. The question isn't whether you can afford it — it's whether you can afford to miss it.</p>
+<div class="pricing-grid">
+<!-- Standard -->
+<div class="price-card reveal reveal-delay-1">
+<div class="price-tier">Standard</div>
+<div class="price-amount">$297</div>
+<div class="price-original">$497</div>
+<ul class="price-features">
+<li><i class="fas fa-check"></i> Full-day event access</li>
+<li><i class="fas fa-check"></i> All speaker sessions</li>
+<li><i class="fas fa-check"></i> Networking opportunities</li>
+<li><i class="fas fa-check"></i> Event materials & workbook</li>
+</ul>
+<a href="#" class="btn btn-outline">Get Standard</a>
+</div>
+<!-- Premium -->
+<div class="price-card featured reveal reveal-delay-2">
+<div class="price-badge">Most Popular</div>
+<div class="price-tier">Premium</div>
+<div class="price-amount">$497</div>
+<div class="price-original">$797</div>
+<ul class="price-features">
+<li><i class="fas fa-check"></i> Everything in Standard</li>
+<li><i class="fas fa-check"></i> Priority front seating</li>
+<li><i class="fas fa-check"></i> Exclusive lunch session</li>
+<li><i class="fas fa-check"></i> Digital recordings access</li>
+<li><i class="fas fa-check"></i> Premium workbook</li>
+</ul>
+<a href="#" class="btn btn-primary">Get Premium</a>
+</div>
+<!-- VIP -->
+<div class="price-card reveal reveal-delay-3">
+<div class="price-tier">VIP</div>
+<div class="price-amount">$997</div>
+<div class="price-original">$1,497</div>
+<ul class="price-features">
+<li><i class="fas fa-check"></i> Everything in Premium</li>
+<li><i class="fas fa-check"></i> Front row reserved seats</li>
+<li><i class="fas fa-check"></i> Meet & greet with speakers</li>
+<li><i class="fas fa-check"></i> Exclusive photo opportunities</li>
+<li><i class="fas fa-check"></i> VIP lounge access</li>
+<li><i class="fas fa-check"></i> Lifetime community access</li>
+</ul>
+<a href="#" class="btn btn-outline">Get VIP</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- STATS -->
+<section class="section stats">
+<div class="container">
+<div class="stats-grid">
+<div class="stat-item reveal">
+<div class="stat-value"><span class="counter" data-target="100000">0</span>+</div>
+<div class="stat-label">Lives Impacted Globally</div>
+</div>
+<div class="stat-item reveal reveal-delay-1">
+<div class="stat-value"><span class="counter" data-target="50">0</span>+</div>
+<div class="stat-label">Countries Represented</div>
+</div>
+<div class="stat-item reveal reveal-delay-2">
+<div class="stat-value"><span class="counter" data-target="10">0</span>+</div>
+<div class="stat-label">Years of Excellence</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- TESTIMONIALS / SOCIAL PROOF -->
+<section class="section" style="background:var(--dark)">
+<div class="container text-center">
+<span class="section-label reveal">Social Proof</span>
+<h2 class="section-title reveal">Lives Already Transformed</h2>
+<div class="testimonials-grid">
+<div class="testimonial-card reveal reveal-delay-1">
+<p class="testimonial-text">"I walked in skeptical and walked out with a completely new vision for my life. Within 3 months, I doubled my business revenue and found a peace I didn't know was possible."</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">AK</div>
+<div><div class="testimonial-name">Arjun K.</div><div class="testimonial-role">Tech Entrepreneur, Austin</div></div>
+</div>
+</div>
+<div class="testimonial-card reveal reveal-delay-2">
+<p class="testimonial-text">"The speakers don't just talk — they transmit energy. I've been to dozens of conferences. Nothing comes close to this. My entire family attended and it changed our dynamic forever."</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">SP</div>
+<div><div class="testimonial-name">Sneha P.</div><div class="testimonial-role">Life Coach, Houston</div></div>
+</div>
+</div>
+<div class="testimonial-card reveal reveal-delay-3">
+<p class="testimonial-text">"The AI and wealth session alone was worth 100x the ticket price. I implemented what I learned and built a six-figure side income within six months. This event is a cheat code."</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">RV</div>
+<div><div class="testimonial-name">Ravi V.</div><div class="testimonial-role">Software Engineer, Dallas</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- VENUE -->
+<section class="section venue" id="venue">
+<div class="container">
+<div class="text-center" style="margin-bottom:60px">
+<span class="section-label reveal">The Venue</span>
+<h2 class="section-title reveal">Dallas Convention Center</h2>
+<p class="section-sub reveal">A world-class venue in the heart of Downtown Dallas — the perfect setting for a world-class transformation.</p>
+</div>
+<div class="venue-card reveal">
+<div class="venue-map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.3!2d-96.795!3d32.775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9917b0a8a0e7%3A0x5e7af0f4c37d99cb!2sKay%20Bailey%20Hutchison%20Convention%20Center%20Dallas!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="venue-info">
+<h3>Where Transformation Happens</h3>
+<p>Located in the vibrant heart of Downtown Dallas, the Convention Center offers a stunning, state-of-the-art space designed to inspire and elevate.</p>
+<ul class="venue-details">
+<li><i class="fas fa-map-marker-alt"></i> 650 S Griffin St, Dallas, TX 75202</li>
+<li><i class="fas fa-calendar"></i> May 30, 2026 — Doors Open 8:00 AM</li>
+<li><i class="fas fa-clock"></i> Full Day Event: 9:00 AM – 8:00 PM</li>
+<li><i class="fas fa-parking"></i> Ample parking available on-site</li>
+<li><i class="fas fa-plane"></i> 20 minutes from DFW International Airport</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq" id="faq">
+<div class="container text-center">
+<span class="section-label reveal">Questions?</span>
+<h2 class="section-title reveal">Frequently Asked Questions</h2>
+<p class="section-sub reveal">Everything you need to know. If you don't see your question, reach out to us directly.</p>
+<div class="faq-grid">
+<div class="faq-item reveal">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What is Awaken Dallas 2026? <i class="fas fa-plus"></i></div>
+<div class="faq-a">Awaken Dallas is a premier, full-day life and leadership transformation experience featuring 5 world-class speakers covering mindset, health, wealth, AI, spirituality, and purpose. It's designed to catalyze profound personal and professional breakthroughs in a single day.</div>
+</div>
+<div class="faq-item reveal">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">When and where is the event? <i class="fas fa-plus"></i></div>
+<div class="faq-a">May 30, 2026 at the Dallas Convention Center in Downtown Dallas, Texas. Doors open at 8:00 AM, and the event runs from 9:00 AM to 8:00 PM.</div>
+</div>
+<div class="faq-item reveal">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What's the difference between ticket tiers? <i class="fas fa-plus"></i></div>
+<div class="faq-a">Standard gives you full event access to all sessions. Premium adds priority seating, an exclusive lunch session, digital recordings, and a premium workbook. VIP includes everything plus front-row seats, meet & greet with all speakers, photo opportunities, VIP lounge, and lifetime community access.</div>
+</div>
+<div class="faq-item reveal">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Is there a refund policy? <i class="fas fa-plus"></i></div>
+<div class="faq-a">Yes. Full refunds are available up to 30 days before the event. Between 30 and 14 days, you can receive a 50% refund or transfer your ticket to someone else. Within 14 days of the event, tickets are non-refundable but fully transferable.</div>
+</div>
+<div class="faq-item reveal">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Can I bring my family? <i class="fas fa-plus"></i></div>
+<div class="faq-a">Absolutely! Many of our sessions are designed for personal and family growth. Several of our speakers specialize in conscious parenting, relationships, and family dynamics. Group discounts are available for 3+ tickets — contact us for details.</div>
+</div>
+<div class="faq-item reveal">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Will the sessions be recorded? <i class="fas fa-plus"></i></div>
+<div class="faq-a">Yes, all sessions will be professionally recorded. Premium and VIP ticket holders receive complimentary access to digital recordings within 7 days after the event. Standard ticket holders can purchase recordings separately.</div>
+</div>
+<div class="faq-item reveal">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Is food included? <i class="fas fa-plus"></i></div>
+<div class="faq-a">Light refreshments and beverages are provided for all attendees throughout the day. Premium and VIP ticket holders enjoy an exclusive catered lunch session with networking opportunities. There are also numerous dining options near the venue.</div>
+</div>
+<div class="faq-item reveal">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How many seats are available? <i class="fas fa-plus"></i></div>
+<div class="faq-a">We are limiting this experience to just 500 attendees to ensure an intimate, high-impact environment. Our previous events have sold out weeks in advance. We strongly recommend securing your spot early — once seats are gone, they're gone.</div>
+</div>
+<div class="faq-item reveal">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What should I wear? <i class="fas fa-plus"></i></div>
+<div class="faq-a">Smart casual is recommended. Dress comfortably but with intention — you're stepping into a transformative experience. Many attendees find that dressing well enhances their mindset and the overall energy of the room.</div>
+</div>
+<div class="faq-item reveal">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How do I get the most out of this event? <i class="fas fa-plus"></i></div>
+<div class="faq-a">Come with an open mind, a journal, and zero expectations. The most profound transformations happen when you surrender to the experience. Network boldly, take notes, and commit to implementing at least one insight within 24 hours of leaving.</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+<div class="container">
+<div class="urgency-bar reveal"><i class="fas fa-circle" style="font-size:8px"></i> Only 500 Seats — Early Bird Pricing Ends Soon</div>
+<h2 class="reveal">Your Future Self<br>Is Waiting</h2>
+<p class="reveal">A year from now, you'll wish you'd started today. This is your moment. This is your sign. Don't let it pass you by.</p>
+<div class="reveal">
+<a href="#pricing" class="btn btn-primary" style="font-size:1.15rem;padding:22px 56px"><i class="fas fa-ticket-alt"></i> Claim Your Seat Now</a>
+</div>
+<p class="reveal" style="margin-top:24px;font-size:.85rem;color:var(--text-dim)">🔒 Secure checkout · Satisfaction guaranteed · Flexible refund policy</p>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a href="#" class="nav-logo" style="font-size:1.8rem">AWAKEN <span>DALLAS</span></a>
+<p>A Life & Leadership Transformation Experience. May 30, 2026. Dallas Convention Center.</p>
+</div>
+<div class="footer-links">
+<h4>Quick Links</h4>
+<a href="#speakers">Speakers</a>
+<a href="#schedule">Schedule</a>
+<a href="#pricing">Pricing</a>
+<a href="#venue">Venue</a>
+<a href="#faq">FAQ</a>
+</div>
+<div class="footer-links">
+<h4>Connect</h4>
+<a href="mailto:hello@awakendallas.com">Contact Us</a>
+<a href="#faq">Privacy Policy</a>
+<a href="#faq">Terms of Service</a>
+<a href="mailto:sponsors@awakendallas.com">Sponsorship Inquiries</a>
+</div>
+</div>
+<div class="footer-bottom">
+<span>&copy; 2026 Awaken Dallas. All rights reserved.</span>
+<div class="footer-social">
+<a href="https://www.instagram.com/meetavinash/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+<a href="https://www.linkedin.com/in/avinash-mada/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+</div>
+</div>
+</div>
+</footer>
+
+<script>
+// COUNTDOWN
+(function(){
+const target=new Date('2026-05-30T09:00:00-05:00').getTime();
+function update(){
+const now=Date.now(),d=target-now;
+if(d<0)return;
+document.getElementById('cd-days').textContent=String(Math.floor(d/864e5)).padStart(3,'0');
+document.getElementById('cd-hours').textContent=String(Math.floor((d%864e5)/36e5)).padStart(2,'0');
+document.getElementById('cd-mins').textContent=String(Math.floor((d%36e5)/6e4)).padStart(2,'0');
+document.getElementById('cd-secs').textContent=String(Math.floor((d%6e4)/1e3)).padStart(2,'0');
+}
+update();setInterval(update,1000);
+})();
+
+// NAV SCROLL
+window.addEventListener('scroll',()=>{
+document.getElementById('nav').classList.toggle('scrolled',window.scrollY>50);
+});
+
+// REVEAL ON SCROLL
+const observer=new IntersectionObserver((entries)=>{
+entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}});
+},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+// COUNTER ANIMATION
+const counterObserver=new IntersectionObserver((entries)=>{
+entries.forEach(e=>{
+if(e.isIntersecting){
+const el=e.target,target=+el.dataset.target;
+const duration=2000,steps=60;
+let current=0;
+const increment=target/steps;
+const timer=setInterval(()=>{
+current+=increment;
+if(current>=target){current=target;clearInterval(timer)}
+el.textContent=Math.floor(current).toLocaleString();
+},duration/steps);
+counterObserver.unobserve(el);
+}
+});
+},{threshold:0.5});
+document.querySelectorAll('.counter').forEach(el=>counterObserver.observe(el));
+
+// PARTICLES
+(function(){
+const c=document.getElementById('particles-canvas'),ctx=c.getContext('2d');
+let w,h,particles=[];
+function resize(){w=c.width=window.innerWidth;h=c.height=window.innerHeight}
+resize();window.addEventListener('resize',resize);
+class P{
+constructor(){this.reset()}
+reset(){this.x=Math.random()*w;this.y=Math.random()*h;this.vx=(Math.random()-.5)*.3;this.vy=(Math.random()-.5)*.3;this.r=Math.random()*1.5+.5;this.a=Math.random()*.4+.1}
+update(){this.x+=this.vx;this.y+=this.vy;if(this.x<0||this.x>w)this.vx*=-1;if(this.y<0||this.y>h)this.vy*=-1}
+draw(){ctx.beginPath();ctx.arc(this.x,this.y,this.r,0,Math.PI*2);ctx.fillStyle=`rgba(212,168,83,${this.a})`;ctx.fill()}
+}
+for(let i=0;i<60;i++)particles.push(new P());
+function loop(){
+ctx.clearRect(0,0,w,h);
+particles.forEach(p=>{p.update();p.draw()});
+// Connect nearby
+for(let i=0;i<particles.length;i++){
+for(let j=i+1;j<particles.length;j++){
+const dx=particles[i].x-particles[j].x,dy=particles[i].y-particles[j].y;
+const dist=Math.sqrt(dx*dx+dy*dy);
+if(dist<120){
+ctx.beginPath();ctx.moveTo(particles[i].x,particles[i].y);ctx.lineTo(particles[j].x,particles[j].y);
+ctx.strokeStyle=`rgba(212,168,83,${.08*(1-dist/120)})`;ctx.stroke();
+}
+}
+}
+requestAnimationFrame(loop);
+}
+loop();
+})();
+
+// SMOOTH SCROLL
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+a.addEventListener('click',e=>{
+const target=document.querySelector(a.getAttribute('href'));
+if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'})}
+});
+});
+</script>
+</body>
+</html>
