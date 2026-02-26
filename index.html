@@ -385,7 +385,8 @@ h1,h2,h3,h4,h5{font-family:var(--font-head);font-weight:600;line-height:1.2}
   .venue-info h3{font-size:1.4rem}
   .venue-details li{font-size:.9rem;padding:8px 0}
   .faq-q{padding:16px 0;font-size:1rem}
-  .faq-a{max-height:400px;font-size:.9rem}
+  .faq-a{max-height:0;font-size:.9rem;overflow:hidden}
+  .faq-item.open .faq-a{max-height:400px;padding-bottom:24px}
   .footer-grid{grid-template-columns:1fr;gap:24px;margin-bottom:24px}
   .footer-bottom{flex-direction:column;gap:12px;align-items:center;text-align:center}
   .nav-logo{font-size:1.3rem}
