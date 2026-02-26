@@ -235,10 +235,10 @@ h1,h2,h3,h4,h5{font-family:var(--font-head);font-weight:600;line-height:1.2}
 .testimonial-card{padding:32px;border-radius:20px;background:var(--glass);border:1px solid var(--glass-border);position:relative}
 .testimonial-card::before{content:'\201C';font-family:var(--font-head);font-size:5rem;color:var(--gold);opacity:.2;position:absolute;top:10px;left:24px;line-height:1}
 .testimonial-text{font-size:1rem;color:var(--text);line-height:1.8;margin-bottom:20px;position:relative;z-index:1;font-style:italic}
-.testimonial-author{display:flex;align-items:center;gap:12px}
-.testimonial-avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--amber));display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--dark);font-size:.9rem}
-.testimonial-name{font-weight:600;color:var(--cream);font-size:.95rem}
-.testimonial-role{color:var(--text-dim);font-size:.8rem}
+.testimonial-author{display:flex;align-items:center;justify-content:flex-start;gap:12px}
+.testimonial-avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--amber));display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--dark);font-size:.9rem;flex-shrink:0}
+.testimonial-name{font-weight:600;color:var(--cream);font-size:.95rem;text-align:left}
+.testimonial-role{color:var(--text-dim);font-size:.8rem;text-align:left}
 
 /* VENUE */
 .venue{background:var(--dark)}
